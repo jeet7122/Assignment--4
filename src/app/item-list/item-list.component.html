@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Grocery List</h2>
+  <div *ngFor="let item of productList" class="item-list" (click)="selectItem(item)">
+    <p><strong>{{item.PName}}</strong> </p>
+    <p><strong>Price:</strong> {{item.Price}}</p>
+  </div>
+
+  <app-item-description [item]="selectedProduct"></app-item-description>
+ </div>

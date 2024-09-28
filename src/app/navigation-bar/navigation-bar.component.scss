@@ -1,0 +1,33 @@
+.container{
+  width: 100vw;
+  display: flex;
+  gap: 50%;
+  background-color: #283618;
+  border-radius: 8px;
+}
+h2{
+  font-size: 2rem;
+  padding-left: 10px;
+  font-family: Arial;
+  margin-top:30px;
+  color: #fefae0;
+}
+ul{
+  list-style: none;
+}
+ul{
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+li > a{
+  color: #fefae0;
+  font-size: 20px;
+  border-radius: 3px ;
+  transition: border 0.3s;
+
+}
+li > a:hover{
+  border: 0.5px solid #fefae0;
+}

@@ -1,0 +1,9 @@
+<div *ngIf="item" class="details-column">
+  <h2>{{item.PName}}</h2>
+  <div class="details-container">
+    <p><strong>Description:</strong> {{item.PDescription}}</p>
+    <p><strong>Price:</strong> {{item.Price}}</p>
+    <p><strong>Added To Cart:</strong> {{item.InCart? 'Added to Cart': 'Not in Cart'}}</p>
+    <button (click)="toggleStatusCart(item)">Add to Cart</button>
+  </div>
+</div>
